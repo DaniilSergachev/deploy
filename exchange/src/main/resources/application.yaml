@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://exchange_db:5432/exchange_db
+    username: postgres
+    password: wolwer123321
+  jpa:
+    properties.hibernate:
+      show-sql: true
+      hbm2ddl:
+        auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+
