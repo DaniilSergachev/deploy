@@ -31,11 +31,8 @@ services:
       - dev
 
 
-
   api:
     build: ./exchange
-    ports:
-      - "8080:8080"
     depends_on:
       - exchange_db
     networks:
@@ -43,7 +40,5 @@ services:
 
   ui:
     build: ./currency-exchange-frontend-main
-    ports:
-      - "80:80"
     networks:
       - dev
